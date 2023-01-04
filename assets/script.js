@@ -1,28 +1,23 @@
-// Query Selectors
+// Query Selectors...lots of em lol
 var welcome = document.querySelector("#introduction");
 var startBtn = document.querySelector("#start_button");
 var introPage =document.querySelector("#intro_page");
-
 var questionPage = document.querySelector("#question_page");
 var askQuestion = document.querySelector("#ask_question");
-
 var reactButtons = document.querySelectorAll(".choices");
 var answerBtn1 = document.querySelector("#answer_btn1");
 var answerBtn2 = document.querySelector("#answer_btn2");
 var answerBtn3 = document.querySelector("#answer_btn3");
 var answerBtn4 = document.querySelector("#answer_btn4");
-
 var checkLine = document.querySelector("#check_line");
 var scoreBoard = document.querySelector("#submit_page");
 var finalScore = document.querySelector("#final_score");
 var userInitial =document.querySelector("#initial");
-
 var submitBtn =document.querySelector("#submit_btn");
 var highScorePage =document.querySelector("#highscore_page");
 var scoreRecord =document.querySelector("#score_record");
 var scoreCheck =document.querySelector("#score_check");
 var finish =document.querySelector("#finish");
-
 var backBtn =document.querySelector("#back_btn");
 var clearBtn=document.querySelector("#clear_btn");
 
@@ -115,7 +110,7 @@ function checkAnswer(event) {
     if (questionList[questionNumber].answer == event.target.value) {
         checkLine.textContent = "Correct!"; 
         checkLine.style.color = "green"; 
-        totalScore = totalScore + 10;
+        totalScore = totalScore + 15;
 
     } else {
         secondsLeft = secondsLeft - 10;
@@ -133,13 +128,12 @@ questionCount++;
 
 // End the game
 function gameOver() {
-
-        questionPage.style.display = "none";
-        scoreBoard.style.display = "block";
-        console.log(scoreBoard);
-        // display the final score
-        finalScore.textContent = "Your final score is:  " + totalScore ; 
-        timeLeft.style.display = "none"; 
+    questionPage.style.display = "none";
+    scoreBoard.style.display = "block";
+    console.log(scoreBoard);
+    // display the final score
+    finalScore.textContent = "Your final score is:  " + totalScore ; 
+    timeLeft.style.display = "none"; 
 };
 
 // get current score and initials from local storage
@@ -153,7 +147,6 @@ function getScore () {
     }
     return freshList;
 };
-
 
 // Posts score to scoreboard and only keeps the top 5 highest scores
 function renderScore () {

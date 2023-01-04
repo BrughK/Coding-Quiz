@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/reset.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Coding Quiz</title>
+</head>
+<body>
+    <nav>
+        <button class="button" id="score">View Highscores:</button>
+        <p id="timer">Time: 75</p>
+    </nav>
+    <main>
+        <div>
+            <section class="home" id="home">
+            <div>
+                <h1>Coding Quiz Challenge</h1>
+                <p id="instructions">Try to answer the following code-related questions within the time limit.
+                Keep in mind that incorrect answers will penalize your score/time by ten seconds!</p>
+                <button class="button" id="start">Start Quiz</button>    
+            </div>
+        </section>
+        
+        <section class="questions" id="questions">
+            <div>
+            <h2 id="ask">Question Here</h2>
+            <ul>
+                <li><button class ="options button" id="answer_btn1" value="a">A1</button></li>
+                <li><button class ="options button" id="answer_btn2" value="b">A2</button></li>
+                <li><button class ="options button" id="answer_btn3" value="c">A3</button></li>
+                <li><button class ="options button" id="answer_btn4" value="d">A4</button></li>
+            </ul>
+        </div>
+        <div id="answerCheck">
+            <p>Correct or Wrong</p>
+        </div>
+        </section>
+        <section class="submit" id="submit">
+            <div>
+                <h2 id="finish">Quiz Done!</h2>
+                <p id = "final_score">Your score is: </p>
+                <p>Enter your initals please
+                    <input id="initial">
+                    <button class="button" id="submit_btn">Submit</button>
+                </p>
+            </div>
+        </section>
+        <section class="scores" id ="scores">
+            <div>
+                <h2>High Scores</h2>
+                <div id="leaderboard"><p>Your record</p></div><br><br>
+                <div>
+                    <button class="button" id="back">Go back</button>
+                    <button class="button" id="clear">Clear Highscores</button>
+                </div>
+            </div>
+        </section>
+        </div>
+    </main>
+</body>
+</html>

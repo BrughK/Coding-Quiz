@@ -62,7 +62,7 @@ function countdown() {
         var timerInterval = setInterval(function () {
 
           secondsLeft--;
-          timeLeft.textContent = "Time left: " + secondsLeft + " s";
+          timeLeft.textContent = "Time left: " + secondsLeft;
     
             if (secondsLeft <= 0){
                 clearInterval(timerInterval);
